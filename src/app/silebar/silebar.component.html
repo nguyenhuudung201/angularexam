@@ -1,0 +1,34 @@
+<div class="silebar">
+<div class="dropdown">
+  <button class="dropbtn"> Favorites</button>
+  <div class="dropdown-content">
+    <a href="#"> Inbox</a>
+    <a href="#">Sent Items</a>
+  </div>
+</div>
+<br>
+  <div class="dropdown">
+    <button class="dropbtn"> John</button>
+    <div class="dropdown-content">
+      <a href="#"> Inbox</a>
+      <a href="#">Drafts</a>
+      <a href="#"> Deleted Items</a>
+      <a href="#"> Sent Items</a>
+      <a href="#"> OutBox </a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="info">
+    <div *ngFor="let p of info">
+      <ul>
+        <div>
+          <li>{{p.name}}</li>
+          <li>{{p.matter}}</li>
+          <li>{{p.hello}}</li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
